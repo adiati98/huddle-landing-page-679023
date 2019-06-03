@@ -1,0 +1,166 @@
+:root {
+	--header: 'Poppins', sans-serif;
+	--paragraph: 'Open Sans', sans-serif;
+
+	--primary: hsl(257, 40%, 49%);
+	--font-color: #fcf9ec;
+}
+
+html,
+body {
+	margin: 0;
+	background-image: url(./images/bg-mobile.svg);
+	background-color: var(--primary);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+.logo {
+	width: 150px;
+	height: 100px;
+	display: block;
+	margin-right: auto;
+	padding-left: 50px;
+}
+
+.mockups {
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+
+h1 {
+	font-family: var(--header);
+	font-weight: 700;
+	font-size: 1.5em;
+	text-align: center;
+	color: var(--font-color);
+	padding: 20px 50px;
+}
+
+p {
+	font-family: var(--paragraph);
+	text-align: center;
+	color: var(--font-color);
+	padding: 0 50px;
+	padding-bottom: 15px;
+	font-size: 1em;
+}
+
+button {
+	display: block;
+	margin: auto;
+	width: 200px;
+	height: 40px;
+	border-radius: 50px;
+	font-family: var(--header);
+	font-weight: 700;
+	color: #333;
+	border: none;
+	box-shadow: 2px 2px 8px #f781bc;
+}
+
+button:hover {
+	background-color: #f781bc;
+	cursor: pointer;
+	box-shadow: 2px 2px 8px #fcf9ec;
+	color: #fcf9ec;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+}
+
+li {
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.fab {
+	font-size: 2em;
+	color: var(--font-color);
+	margin-top: 40px;
+	text-shadow: 2px 2px 8px #f781bc;
+}
+
+.fab:hover {
+	color: #f781bc;
+	text-shadow: 2px 2px 8px #fcf9ec;
+}
+
+.attribution {
+	font-size: 9px;
+	text-align: center;
+}
+
+.attribution a {
+	color: #f781bc;
+	text-decoration: none;
+}
+
+.attribution a:hover {
+	color: #b8e9c0;
+}
+
+@media (min-width: 1100px) {
+	.logo {
+		width: 250px;
+		height: 150px;
+		margin-top: 0;
+	}
+
+	.mockups {
+		width: 90%;
+		margin-top: 25px;
+	}
+
+	h1 {
+		font-size: 2.3em;
+		text-align: left;
+		padding-bottom: 0;
+	}
+
+	p {
+		font-size: 1.2em;
+		text-align: left;
+		margin-bottom: 30px;
+	}
+
+	button {
+		height: 60px;
+		margin-left: 40px;
+		font-size: 1.1em;
+	}
+
+	.grid-2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin: auto;
+	}
+
+	.container {
+		max-width: 900px;
+		margin: auto;
+		overflow: hidden;
+		padding-top: 180px;
+	}
+
+	ul {
+		text-align: right;
+		margin-right: 50px;
+		margin-top: 100px;
+	}
+
+	.fab {
+		font-size: 2.3em;
+	}
+
+	.attribution {
+		text-align: right;
+		font-size: 11px;
+	}
+}
